@@ -1,49 +1,43 @@
 # Widget Collection
 
-様々な用途で活用できる、汎用的でカスタマイズ可能なUIウィジェットを集めたコレクションプロジェクトです。
+Android向けのカスタムウィジェットアプリのコレクションです。ホーム画面等に配置して利用できる様々なウィジェットのソースコードを管理しています。
 
 > **⚠️ Notice**
-> 現在、このアプリケーションは一般公開されていません。
-
-## ✨ Features
-
-* **ウィジェットのカタログ化**: (例: 独自に作成したUIコンポーネントを一覧で確認・テスト可能)
-* **再利用性の向上**: (例: プロパティの変更だけで様々な画面にシームレスに組み込める設計)
-* (※その他、実装している具体的なウィジェットの種類やアピールポイントをここに追記してください)
+> 現在、このアプリケーションは一般公開（Google Playストア等での配信）を行っていません。
 
 ## 🛠 Tech Stack
 
-* **Language**: (例: Dart / TypeScript / Swift / Kotlin)
-* **Framework**: (例: Flutter / React / SwiftUI / Jetpack Compose)
+* **Language**: Java
+* **Platform**: Android
+* **Build System**: Gradle
+
+## 📁 Project Structure
+
+主要なディレクトリ・ファイル構成は以下の通りです。
+
+* `src/`: アプリケーションのソースコード（Javaファイル、リソースファイル、AndroidManifest.xml など）が格納されています。
+* `build.gradle`: プロジェクトの依存関係やビルド設定を定義するファイルです。
 
 ## 🚀 Getting Started
 
-ローカル環境でプロジェクトを立ち上げるための手順です。
+ローカル環境（Android Studio）でプロジェクトをビルドして実行するための手順です。
 
 ### Prerequisites (前提条件)
 
-* (例: Flutter SDK v3.x.x 以上)
-* (例: Node.js v18.x.x 以上)
+* [Android Studio](https://developer.android.com/studio) がインストールされていること
+* JDK (Java Development Kit) がセットアップされていること
+* Android エミュレータ、もしくはデバッグ接続された実機端末があること
 
-### Installation
+### Installation & Run
 
-1.  リポジトリをクローンします。
+1. リポジトリをローカルにクローンします。
     ```bash
     git clone [https://github.com/rayray-swamp/Widget-Collection.git](https://github.com/rayray-swamp/Widget-Collection.git)
     ```
-2.  プロジェクトのディレクトリに移動します。
-    ```bash
-    cd Widget-Collection
-    ```
-3.  依存パッケージをインストールします。
-    ```bash
-    # 使用している環境に合わせて書き換えてください (例: flutter pub get / npm install)
-    ```
-4.  アプリケーションを起動します。
-    ```bash
-    # (例: flutter run / npm start)
-    ```
+2. **Android Studio** を起動し、「Open」からクローンした `Widget-Collection` ディレクトリを選択してプロジェクトを開きます。
+3. Gradleの同期（Sync）が完了するのを待ちます。
+4. 画面上部の「Run」ボタン（▶️）をクリックし、エミュレータまたは実機でアプリをビルド・実行します。
 
 ## 💡 Usage
 
-(※ここには、実際にコレクション内のウィジェットを呼び出す際のコード例などを記載すると親切です)
+(※ここに、実際にどのような機能を持つウィジェットが含まれているか、ホーム画面にウィジェットを追加する手順、またはウィジェットの更新間隔などの仕様を必要に応じて追記してください)
