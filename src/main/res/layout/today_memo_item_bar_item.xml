@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_style"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:layout_marginLeft="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:id="@+id/today_memo_bar_item_im"
+            android:paddingLeft="10dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/today_memo_bar_item_text"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+    </LinearLayout>
+</LinearLayout>

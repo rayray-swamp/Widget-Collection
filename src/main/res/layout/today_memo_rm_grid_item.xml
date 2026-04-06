@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gridselect">
+    <ViewFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/today_memo_dialog_rm_grid_vf"
+        android:inAnimation="@anim/scale_in_fast"
+        android:background="@null"
+        android:foreground="@null">
+        <TextView
+            android:layout_width="@dimen/today_memo_rm_grid_im_size"
+            android:layout_height="@dimen/today_memo_rm_grid_im_size"
+            android:layout_margin="@dimen/today_memo_rm_grid_ma_size"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/today_memo_dialog_rm_grid_im"
+            android:background="@null"
+            android:foreground="@null"/>
+    </ViewFlipper>
+</FrameLayout>

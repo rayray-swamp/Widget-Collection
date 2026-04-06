@@ -1,0 +1,25 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/ThemeOverlay.カレンダー.AppWidgetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:id="@+id/analog_clock_back_img_od"/>
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/analog_clock_vf"
+        android:inAnimation="@anim/scale_in">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:id="@+id/analog_clock_back_img2_od"/>
+    </ViewFlipper>
+
+
+</RelativeLayout>

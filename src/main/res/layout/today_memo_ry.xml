@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inAnimation="@anim/slide_in_right"
+    android:id="@+id/today_memo_dialog_ry_vf">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/repeat_every"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:layout_weight="1"
+                android:text="1"
+                android:inputType="numberPassword"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/today_memo_dialog_ry_num"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:id="@+id/today_memo_dialog_ry_unit"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginRight="50dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/repeat_every_2"
+            android:background="@drawable/framestyle3"
+            android:gravity="right"
+            android:textColor="@color/black"/>
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/today_memo_dialog_ry_gv"
+            android:listSelector="@drawable/gridselect"
+            android:background="@null"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</ViewFlipper>
+

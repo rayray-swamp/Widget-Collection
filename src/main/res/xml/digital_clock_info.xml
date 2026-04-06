@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="40dp"
+    android:minHeight="40dp"
+    android:updatePeriodMillis="1800000"
+    android:previewImage="@drawable/digital_clock_tag"
+    android:initialLayout="@layout/digital_clock"
+    android:resizeMode="horizontal|vertical" 
+    android:widgetCategory="home_screen"
+    android:configure="configure.AppWidgetConfigureActivity"
+    android:initialKeyguardLayout="@layout/digital_clock">
+</appwidget-provider>

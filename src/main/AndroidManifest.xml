@@ -1,0 +1,166 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="calendar">
+<uses-permission android:name="android.permission.READ_CALENDAR" />
+
+<application
+    android:allowBackup="true"
+    android:icon="@drawable/ic"
+    android:label="@string/app_name"
+    android:roundIcon="@drawable/ic"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.カレンダー">
+    <service
+        android:name="todays_memo.TodayMemoRemoteViewsService"
+        android:permission="android.permission.BIND_REMOTEVIEWS"></service>
+
+
+    <activity android:name=".MainActivity"
+        android:excludeFromRecents="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="simple_memo.Simple_Memo_activity"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:excludeFromRecents="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="Schedule.Select_day_activity"
+        android:windowSoftInputMode="adjustResize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:excludeFromRecents="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name="todays_memo.Memo_Activity"
+        android:windowSoftInputMode="adjustResize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:excludeFromRecents="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+    </activity>
+    <activity
+        android:name="configure.AppWidgetConfigureActivity"
+        android:label="@string/title_activity_app_widget_configure"
+        android:theme="@style/Theme.カレンダー.NoActionBar"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+        </intent-filter>
+    </activity>
+
+    <receiver
+        android:name=".NewAppWidget"
+        android:label="@string/calendar"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            <action android:name="android.intent.action.DATE_CHANGED" />
+        </intent-filter>
+
+        <meta-data
+            android:name="android.appwidget.provider"
+            android:resource="@xml/new_app_widget_info" />
+    </receiver>
+
+    <receiver
+        android:name="todays_memo.todays_memo"
+        android:label="@string/todays_memo"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+        </intent-filter>
+
+        <meta-data
+            android:name="android.appwidget.provider"
+            android:resource="@xml/todays_memo_info" />
+    </receiver>
+    <receiver
+        android:name="simple_memo.Simple_Memo"
+        android:label="@string/simple_memo"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+        </intent-filter>
+
+        <meta-data
+            android:name="android.appwidget.provider"
+            android:resource="@xml/simple__memo_info" />
+    </receiver>
+    <receiver
+        android:name="Schedule.Schedule"
+        android:label="@string/Schedule"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+        </intent-filter>
+
+        <meta-data
+            android:name="android.appwidget.provider"
+            android:resource="@xml/schedule_info" />
+    </receiver>
+    <receiver
+        android:name="AnalogClock.BackgroundBroadcastReceiver"
+        android:enabled="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.USER_PRESENT" />
+            <action android:name="android.intent.action.SCREEN_OFF" />
+            <action android:name="android.intent.action.SCREEN_ON" />
+        </intent-filter>
+
+    </receiver>
+    <receiver
+        android:name="AnalogClock.AnalogClock"
+        android:label="@string/Analog_Clock"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            <action android:name="android.intent.action.SCREEN_OFF" />
+            <action android:name="android.intent.action.USER_PRESENT" />
+            <action android:name="android.intent.action.SCREEN_ON" />
+        </intent-filter>
+
+        <meta-data
+            android:name="android.appwidget.provider"
+            android:resource="@xml/analog_clock_info" />
+    </receiver>
+    <receiver
+        android:name="DigitalClock.DigitalClock"
+        android:label="@string/Digital_Clock"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            <action android:name="android.intent.action.SCREEN_OFF" />
+            <action android:name="android.intent.action.USER_PRESENT" />
+            <action android:name="android.intent.action.SCREEN_ON" />
+        </intent-filter>
+
+        <meta-data
+            android:name="android.appwidget.provider"
+            android:resource="@xml/digital_clock_info" />
+    </receiver>
+</application>
+</manifest>
+

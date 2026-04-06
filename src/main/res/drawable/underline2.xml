@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 枠線 width:線の幅、color:線の色 -->
+    <item
+        >
+        <shape
+            android:shape="oval">
+            <solid
+                android:color="@color/black"/>
+
+
+        </shape>
+
+    </item>
+</layer-list>

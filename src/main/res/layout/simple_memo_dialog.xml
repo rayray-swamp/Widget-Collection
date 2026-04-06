@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frame_style"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|start"
+            android:textColor="@color/black"
+            android:text="@string/simple_memo"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/simple_memo_dialog_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="@string/Enter_todays_memo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:text="@string/Cancel"
+                android:background="@drawable/frame_style"
+                android:backgroundTint="@color/gray"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:id="@+id/simple_memo_dialog_cancel"/>
+            <Button
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:text="@string/OK"
+                android:background="@drawable/frame_style"
+                android:backgroundTint="@color/blue"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:id="@+id/simple_memo_dialog_ok"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inAnimation="@anim/slide_in_right"
+    android:id="@+id/today_memo_dialog_nr_vf">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/Deletes_the_set_repeat"
+        android:gravity="center"/>
+</ViewFlipper>
+

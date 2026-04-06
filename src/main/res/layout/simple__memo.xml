@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/ThemeOverlay.カレンダー.AppWidgetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/frame_style"
+        android:id="@+id/simplememo_view_im"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/simplememo_view"
+        android:scaleType="fitCenter"
+        android:layout_margin="5dp"/>
+</FrameLayout>

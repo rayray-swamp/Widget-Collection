@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="40dp">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/frame_style3"
+        android:elevation="2dp"
+        android:id="@+id/color_grid_item_im"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

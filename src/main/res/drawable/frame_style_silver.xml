@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- 枠線 width:線の幅、color:線の色 -->
+    <solid android:color="#d7d8da"
+        />
+
+    <gradient
+        android:startColor="#FFFFFF"
+        android:endColor="#A3A4A5"/>
+    <corners
+        android:radius="15dp"
+        />
+
+</shape>

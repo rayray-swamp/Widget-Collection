@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- ボタンの下地 ボタンの形やアイコンのサイズが変わるならitem内のtop,left,bottom,rightの値を変えて調整-->
+	<item android:top="4dp" android:left="12dp"  android:bottom="4dp" android:right="12dp">
+		<shape android:shape="oval">
+		    <size android:width="24dp" android:height="24dp"/>
+		    <gradient
+		        android:startColor="@color/blue"
+		        android:endColor="@color/blue"
+		        android:angle="270" />
+		</shape>
+	</item>
+    <!-- ボタンの外枠 ボタンの形やアイコンのサイズが変わるならitem内のtop,left,bottom,rightの値を変えて調整-->
+	<item android:top="8.5dp" android:left="16.5dp"  android:bottom="8.5dp" android:right="16.5dp">
+		<shape android:shape="oval">
+		    <stroke android:width="1px" android:color="#666666" />
+		    <solid android:color="#00000000"/>
+		</shape>
+	</item>
+    <!-- ボタンの内枠 ボタンの形やアイコンのサイズが変わるならitem内のtop,left,bottom,rightの値を変えて調整-->
+	<item android:top="11.5dp" android:left="19.5dp" android:bottom="11.5dp" android:right="19.5dp">
+		<shape android:shape="oval">
+		    <stroke android:width="1px" android:color="#666666" />
+		    <solid android:color="#666666"/>
+		</shape>
+	</item>
+</layer-list>

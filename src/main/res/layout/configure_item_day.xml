@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/framestyle3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/configure_day_title"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:text="Date"
+            android:layout_marginLeft="15dp"/>
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/frame_style3"
+            android:elevation="2dp"
+            android:id="@+id/configure_day_im"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="1"
+            android:layout_marginRight="10dp" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/frame_style3"
+            android:elevation="2dp"
+            android:id="@+id/configure_day_im_select"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="1"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+</LinearLayout>

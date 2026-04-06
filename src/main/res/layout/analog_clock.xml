@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/ThemeOverlay.カレンダー.AppWidgetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:id="@+id/analog_clock_back_img"/>
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/analog_clock_vf"
+        android:inAnimation="@anim/scale_in">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:id="@+id/analog_clock_back_img2"/>
+    </ViewFlipper>
+
+    <FrameLayout
+        android:layout_width="100000dp"
+        android:layout_height="100000dp"
+        android:layout_centerInParent="true">
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/analog_clock_s_vf_z"
+            android:inAnimation="@anim/scale_in">
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:id="@+id/analog_clock_s_vf_60"
+                android:inAnimation="@anim/rotate_360">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:id="@+id/analog_clock_s1"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:id="@+id/analog_clock_s2"/>
+                </FrameLayout>
+
+            </ViewFlipper>
+        </ViewFlipper>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_on_hour_of_schedule"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:scaleType="centerInside"
+        android:id="@+id/schedule_line_text"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="23dp"
+        android:src="@drawable/line"
+        android:id="@+id/schedule_line_line"/>
+
+
+</LinearLayout>
